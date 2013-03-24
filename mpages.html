@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>jquerymobile</title>
+	 <link rel="stylesheet" href="http://code.jquery.com/mobile/1.0a4.1/jquery.mobile-1.0a4.1.min.css">
+	 <script src="http://code.jquery.com/jquery-1.5.min.js"></script>
+	 <script src="http://code.jquery.com/mobile/1.0a4.1/jquery.mobile-1.0a4.1.min.js"></script>
+</head>
+<body>
+<!-- Start of first page -->
+<div data-role="page" id="foo">
+　　　<div data-role="header">
+　　　　　<h1>foo</h1>
+　　　</div><!-- /header -->
+　　　<div data-role="content"> 
+　　　　　<p>I'm first in the source order so I'm shown as the page.</p> 
+　　　　　<p>View internal page called <a href="#bar">bar</a></p>
+		<p>View internal page called <a href="#dada">dada</a></p> 
+　　</div><!-- /content -->
+　　<div data-role="footer">
+　　　　<h4>Page Footer</h4>
+　　</div><!-- /footer -->
+　　</div><!-- /page -->
+<!-- Start of second page -->
+　　<div data-role="page" id="bar" data-title="yujianqi">
+　　<div data-role="header">
+　　　<h1>Bar</h1>
+　</div><!-- /header -->
+　　<div data-role="content"> 
+　　　<p>I'm first in the source order so I'm shown as the page.</p> 
+　　　<p><a href="#foo">Back to foo</a></p>
+	<p>View internal page called <a href="#dada">dada</a></p> 
+　</div><!-- /content -->
+　<div data-role="footer">
+　　<h4>Page Footer</h4>
+　</div><!-- /footer -->
+　</div><!-- /page -->
+<!-- Start of third page -->
+　　<div data-role="page" id="dada" data-title="xixi">
+　　<div data-role="header">
+　　　<h1>Imdada</h1>
+　</div><!-- /header -->
+　　<div data-role="content"> 
+　　　<p>I'm dada,third page.xixi.</p> 
+　　　<p><a href="#foo">Back to foo</a></p> 
+　　　<p><a href="#bar">Back to bar</a></p> 
+　</div><!-- /content -->
+　<div data-role="footer" data-position="fixed">
+　　<h4>Page Footer</h4>
+　</div><!-- /footer -->
+　</div><!-- /page -->
+</body>
+</html>
