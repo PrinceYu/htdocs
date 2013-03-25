@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>3列布局</title>
+	<style type="text/css">
+	body{ margin: 0; padding:0;}
+	.grid {
+		  display: -webkit-flex;
+		  display: -moz-flex;
+		  display: -o-flex;
+		  display: -ms-flex;
+		  display: flex;
+		}
+		.col {
+		  padding: 30px;
+		}
+		.fluid {
+		  flex: 1;
+		  background: red;
+		}
+		.fixed {
+		  width: 400px;
+		  background: blue;
+		}
+	</style>
+</head>
+<body>
+	<div class="grid">
+	  <div class="col fluid">
+	    1
+	  </div>
+	  <div class="col fixed">
+	    2
+	  </div>
+	  <div class="col fluid">
+	    3
+	  </div>
+	</div>
+</body>
+</html>
